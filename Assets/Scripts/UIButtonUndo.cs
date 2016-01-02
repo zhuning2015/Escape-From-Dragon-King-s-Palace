@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class UIButtonUndo : MonoBehaviour {
-    private List<GameManager.Command> commands = new List<GameManager.Command>();
+    private List<GameScene.Command> commands = new List<GameScene.Command>();
 
     public static UIButtonUndo invoker = null;
 
@@ -12,7 +12,7 @@ public class UIButtonUndo : MonoBehaviour {
        invoker = this;
     }
 
-    public void AddCommand(GameManager.Command command)
+    public void AddCommand(GameScene.Command command)
     {
         commands.Add(command);
     }
